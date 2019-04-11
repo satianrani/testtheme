@@ -1,0 +1,277 @@
+@font-face {
+    font-family: "Verdana";
+    src: url("./asset/Verdana.woff");
+}
+@mixin  euroicon ($property) {
+    content: '€';
+    font-size: $property;
+    margin-right: 5px;
+  }
+$colorgray: rgb(202,
+197,
+197);
+$boderbetween: 9%;
+
+body {
+    color: black;
+    padding: 0;
+    margin: 0px;
+    font-family: Verdana, sans-serif;
+    .titleweb {
+        
+        a {
+            text-decoration: none;
+            color:black;
+            font-weight: bolder;
+            letter-spacing: 3.5px;
+            font-size: 30px;
+        }
+         
+    }
+    footer {
+        position: relative;
+        background-color: black !important;
+        color: white !important;
+        .dropdown-toggle {
+            cursor: pointer;
+        }
+        .ft0 {
+            display: inline-block;
+            margin-right: 50px;
+        }
+        .ft0:first-child {
+            margin-left: 30px;
+        }
+        .ft0:last-child {
+            position: absolute;
+            text-align: center;
+            width: 70%;
+        }
+        .flag {
+            width: 25px;
+            border-radius: 50%;
+        }
+    }
+    .description-title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .description-detail {
+        color: $colorgray;
+        margin-top: 30px;
+        font-size: 12px;
+    }
+    #carouselExampleIndicators {
+        position: relative;
+        .carousel-indicators>li {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        .carousel-detail {
+            position: absolute;
+            top: 120px;
+            right: 25%;
+            line-height: 3;
+            .f0 {
+                color: #bfb5b55e;
+                font-size: 10px;
+            }
+            .f1, .f2, .f3 {
+                font-size: 30px;
+                color: white;
+            }
+             
+            .f3::before {
+                @include euroicon(20px);
+            }
+            .f4 button {
+                opacity: .8;
+            }
+        
+        }
+        .carousel-control-next, .carousel-control-prev  {
+            background-image:unset;
+            background-color: white !important;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: black;
+            font-size: 20px;
+            opacity: unset;
+            top: unset;
+            bottom: 100px;
+        }
+        .carousel-control-prev {
+            left: 50px;
+    
+        }
+        .carousel-control-next {
+            left: 95px;
+     
+        }
+        .navbar {
+            width: 98%;
+            position: absolute;
+            z-index: 1;
+            left: 1%;
+            top: 20px;
+            .menu-ight {
+                color:black;
+                font-size: 16px;
+                font-weight: bolder;
+                text-decoration: none;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            .menu-ight:hover {
+                opacity: 0.8;
+                transition: 5s;
+            }
+        }
+    
+    }
+    .wording {
+        text-align: center;
+        padding: 50px 25px 50px 25px;
+    }
+    .text-bold {
+        font-weight: bolder;
+    }
+    .topsell {
+        &-left {
+            width: 48%;
+            display: inline-block;
+            margin-left: $boderbetween;
+            text-align: left;
+        }
+        &-right {
+            width: 30%;
+            display: inline-block;
+            text-align: right;
+            // margin-right: $boderbetween;
+        }
+    }
+    .bg-black-footer {
+        background-color: black;
+        height: 60px;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .products {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 1% 50px 1%;
+        cursor: pointer;
+    }
+    .product {
+        flex: 10%;
+        max-width: 400px;
+        margin-bottom: 50px;
+        flex-direction: column;
+        .product-details {
+            div {
+                padding: 5px;
+            }
+            .product-brand {
+                color: $colorgray;
+                font-size: 12px;
+            }
+            .product-name {
+                font-weight: bold;
+            }
+            .product-cost {
+                .cost {
+                    font-weight: bold;
+                    &::before {
+                        @include euroicon(14px);
+                    }
+                }
+                .realcost {
+                    color: $colorgray;
+                    &::before {
+                        @include euroicon(14px);
+                    }
+                }
+            }
+        }
+        .text-light {
+            color: #b7bdc3b0!important;
+        }
+        .carousel-indicators {
+            position: absolute;
+            left: 0;
+            bottom: unset;
+            right: unset;
+            z-index: 15;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding-left: unset;
+            margin-right: unset;
+            margin-left: unset;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            top: 45%;
+            li {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: gray;
+            }
+            .active {
+                background-color: black;
+            }
+        }
+    }
+    .sitemap {
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 50px;
+        background-color: #f6f6f6;
+        .site1head {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .sitehead {
+            margin-bottom: 15px;
+        }
+        .site0head {
+            font-size: 30px;
+            font-weight: bolder;
+            letter-spacing: 6px;
+        }
+        .site0detail {
+            font-size: 11px;
+            line-height: 2;
+            width: 300px;
+        }
+        .sitemapmenu a {
+            color: black;
+        }
+        .sitemapmenu {
+            list-style: none;
+            text-align: left;
+            margin-left: -40px;
+            font-size: 12px;
+            line-height: 3;
+            font-weight: 500;
+        }
+        .sitemapmenu ul {
+            list-style: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .products {
+        flex-direction: column;
+    }
+    
+}
