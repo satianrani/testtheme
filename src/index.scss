@@ -151,6 +151,9 @@ body {
             text-align: right;
             // margin-right: $boderbetween;
         }
+        .text-lights {
+            color: #cac5c5;
+        }
     }
     .bg-black-footer {
         background-color: black;
@@ -199,9 +202,7 @@ body {
                 }
             }
         }
-        .text-light {
-            color: #b7bdc3b0!important;
-        }
+   
         .carousel-indicators {
             position: absolute;
             left: 0;
@@ -235,6 +236,9 @@ body {
         margin-right: 2%;
         padding: 50px;
         background-color: #f6f6f6;
+        .row {
+            margin-left: 50px;
+        }
         .site1head {
             font-size: 18px;
             font-weight: bold;

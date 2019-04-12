@@ -21,8 +21,8 @@ class App extends Component {
         </div>
       </div>
       <div className="topsell">
-        <div className="topsell-left"><span className="text-bold">24 products</span> <span className="text-light">in top sellers</span></div>
-        <div className="topsell-right"><span className="text-bold">Sort by </span><span className="text-light">newest first</span></div>
+        <div className="topsell-left"><span className="text-bold">24 products</span> <span className="text-lights">in top sellers</span></div>
+        <div className="topsell-right"><span className="text-bold">Sort by </span><span className="text-lights">newest first</span></div>
       </div>
       <Products/>
       <Sitemap/>
